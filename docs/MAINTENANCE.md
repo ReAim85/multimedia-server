@@ -1,4 +1,4 @@
-# Disaster Recovery
+# Updates and Disaster Prevention
 ## Updates
 Since Arch is a rolling release, manual updates will be performed every week
 
