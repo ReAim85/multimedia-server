@@ -7,7 +7,7 @@
  HEALTH=$(sudo smartctl -H $DRIVE | grep "overall-health" | awk '{print $NF}')
 
  if [ "$USAGE" -gt "$THRESHOLD" ]; then
-     MESSAGE="⚠️Storage Alert: Disk usage is at ${USAGE}%!"
+     MESSAGE="Storage Alert: Disk usage is at ${USAGE}%!"
      curl -d "$MESSAGE" ntfy.sh/$NTFY_TOPIC
  else
 	 MESSAGE="Daily Check: Disk usage is at ${USAGE}"
